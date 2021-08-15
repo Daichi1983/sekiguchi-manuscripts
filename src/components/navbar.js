@@ -25,16 +25,37 @@ const Navbar = ({ siteTitle }) => {
           <ul className="navbar-nav me-auto mb-2 mb-md-0">
             <li className="nav-item">
               <ExactNavLink
-                to="/"
+                to="/all"
               >
-                Home
+                関口存男文例集コピー総目次
+              </ExactNavLink>
+            </li>
+            <li className="nav-item">
+              <ExactNavLink
+                to="/sekiguchi"
+              >
+                関口存男とは
               </ExactNavLink>
             </li>
             <li className="nav-item">
               <ExactNavLink
                 to="/about"
               >
-                About
+                このサイトについて
+              </ExactNavLink>
+            </li>
+            <li className="nav-item">
+              <ExactNavLink
+                to="/toiawase"
+              >
+                お問い合わせ
+              </ExactNavLink>
+            </li>
+            <li className="nav-item">
+              <ExactNavLink
+                to="/link"
+              >
+                Link
               </ExactNavLink>
             </li>
           </ul>

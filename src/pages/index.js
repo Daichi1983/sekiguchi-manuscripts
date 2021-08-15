@@ -8,26 +8,32 @@ import Seo from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <section className="py-5 text-center container">
-      <div className="row py-lg-5">
-        <div className="col-lg-6 col-md-8 mx-auto">
-          <h1 className="fw-light">Hello world ! </h1>
-          <p className="lead text-muted"> Welcome to this Boostrap 5 Gatsby Starter</p>
-          <StaticImage
-            src="../images/gatsby-astronaut.png"
-            width={300}
-            quality={95}
-            formats={["AUTO", "WEBP"]}
-            alt="A Gatsby astronaut"
-            className="img-fluid"
-          />
+    <section className="py-5 container">
 
-        </div>
-      </div>
-      <div className="row">
-        <Link to="/about/" className="btn btn-primary my-2">About</Link>
-        <Link to="/page-2/" className="btn btn-secondary my-2">Go to page 2</Link>
-      </div>
+<div class="container">
+<h2 class="pink">更新履歴</h2>
+<dl>
+<dt>2021年8月1日</dt>
+<dd>全文例集を公開しました。</dd>
+<dt>2019年3月22日</dt>
+<dd>ページを暫定公開しました。</dd>
+</dl>
+<h2>コンテンツ</h2>
+<dl>
+<dt><Link to="all">関口存男文例集コピー総目次</Link></dt>
+<dd>関口存男が生涯をかけて集めた文例集の目次です。文例集はここからごらんください。</dd>
+<dt><Link to="sekiguchi">関口存男とは</Link></dt>
+<dd>ドイツ語学者、関口存男の説明です。</dd>
+<dt><Link to="about">このサイトについて</Link></dt>
+<dd>このサイトについての説明です。</dd>
+<dt><Link to="toiawase">お問い合わせ</Link></dt>
+<dd>問い合わせ窓口</dd>
+<dt>リンク</dt>
+<dd>リンク集</dd>
+</dl>
+</div>
+
+
     </section>
   </Layout>
 )
